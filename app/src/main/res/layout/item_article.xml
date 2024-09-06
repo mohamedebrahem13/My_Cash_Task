@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- ImageView for the article image -->
+    <ImageView
+        android:id="@+id/imgArticle"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!-- TextView for the article title -->
+    <TextView
+        android:id="@+id/tvArticleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp" />
+
+    <!-- TextView for the article description -->
+    <TextView
+        android:id="@+id/tvArticleDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:paddingBottom="8dp" />
+
+    <!-- TextView for the article publication date -->
+    <TextView
+        android:id="@+id/tvPublishedAt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:paddingBottom="8dp" />
+</LinearLayout>

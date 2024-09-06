@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.Fragments.ArticleDetailsFragment">
+
+    <ImageView
+        android:id="@+id/imageViewArticle"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTitle"
+        tools:srcCompat="@drawable/placeholder_image" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewArticle"
+        tools:text="Article Title" />
+
+    <TextView
+        android:id="@+id/textViewAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        tools:text="Author Name" />
+
+    <TextView
+        android:id="@+id/textViewPublishedAt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAuthor"
+        tools:text="Published Date" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPublishedAt"
+        android:layout_marginTop="8dp"
+        tools:text="Article Description" />
+
+    <TextView
+        android:id="@+id/textViewContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription"
+        android:layout_marginTop="8dp"
+        tools:text="Article Content" />
+
+    <TextView
+        android:id="@+id/textViewUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="?attr/colorAccent"
+        android:autoLink="web"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContent"
+        android:layout_marginTop="16dp"
+        tools:text="https://example.com" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyCash_Task" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.MyCash_Task" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/navy_700</item>
+        <item name="colorPrimaryVariant">@color/navy_900</item>
+        <item name="colorSecondary">@color/green_300</item>
     </style>
 
-    <style name="Theme.MyCash_Task" parent="Base.Theme.MyCash_Task" />
+    <style name="Theme.MyCash_Task" parent="Base.Theme.MyCash_Task">
+        <!-- You can add dark theme customizations here if needed. -->
+    </style>
+
 </resources>
